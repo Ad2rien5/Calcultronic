@@ -1,6 +1,6 @@
 from abc import ABCMeta, abstractmethod
 
-from app.src.enum.type_composant import ComponentType
+from app.src.enum.component_type import ComponentType
 
 
 class Component(metaclass=ABCMeta):
@@ -9,7 +9,7 @@ class Component(metaclass=ABCMeta):
 
     @property
     @abstractmethod
-    def nom(self) -> str:
+    def name(self) -> str:
         pass
 
     @abstractmethod
