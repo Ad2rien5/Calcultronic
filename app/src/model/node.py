@@ -6,7 +6,7 @@ class Node(Component):
 
     def __init__(self, name: str, **components: Component):
         self.names = name
-        self.typeC = ComponentType.NODE
+        self.typec = ComponentType.NODE
         self.components = []
 
         for compo in components:
