@@ -7,7 +7,7 @@ class Node(Component):
     def __init__(self, name: str, **components: Component):
         self.names = name
         self.typeC = ComponentType.NODE
-        self.components: Component = []
+        self.components = []
 
         for compo in components:
             self.components.append(compo)
