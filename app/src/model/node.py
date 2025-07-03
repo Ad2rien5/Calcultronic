@@ -25,3 +25,9 @@ class Node(Component):
 
     def add(self, component: Component):
         self.components.append(component)
+
+    def remove(self, component: Component):
+        for i in range(len(self.components)):
+            if self.components[i] == component:
+                return self.components.pop(i)
+        return None
